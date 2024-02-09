@@ -2,6 +2,7 @@ package tn.spring4ds3.springproj.entities;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 @Entity
@@ -14,4 +15,6 @@ private long idClient;
 private String identifiable;
 @Temporal(TemporalType.DATE)
 private Date datePremiereVisite;
+@OneToMany(mappedBy = "client")
+    private ArrayList<Commande> commandes;
 }

@@ -3,6 +3,7 @@ package tn.spring4ds3.springproj.entities;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 @Entity
 @Table(name = "ChefCuisinier")
@@ -14,4 +15,6 @@ public class ChefCuisinier {
     private String prenom;
     @Enumerated(EnumType.STRING)
     private TypeChef typeChef;
+    @ManyToMany(mappedBy = "chefCuisinier")
+    private ArrayList<Menu> menu;
 }
