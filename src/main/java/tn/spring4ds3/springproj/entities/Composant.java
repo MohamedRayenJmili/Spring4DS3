@@ -9,7 +9,7 @@ import java.util.Date;
 public class Composant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idComposant;
+    private Long idComposant;
     private String nomComposant;
     private float prix;
     @ManyToOne

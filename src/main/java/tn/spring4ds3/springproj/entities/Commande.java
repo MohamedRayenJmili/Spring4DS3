@@ -10,7 +10,7 @@ import java.util.Date;
 public class Commande {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idCommande;
+    private Long idCommande;
     private LocalDate dateCommande;
     private int pourcentageRmise;
     private float totalRmise;

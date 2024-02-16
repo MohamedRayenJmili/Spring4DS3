@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Menu {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idMenu;
+    private Long idMenu;
     private float libelleMenu;
     @Enumerated(EnumType.STRING)
     private TypeMenu typeMenu;

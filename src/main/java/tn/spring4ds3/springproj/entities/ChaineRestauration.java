@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class ChaineRestauration {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idChaineRestauration;
+    private Long idChaineRestauration;
     private String libelle;
     private LocalDate dateCreation;
     @OneToMany(mappedBy = "chaineRestauration")

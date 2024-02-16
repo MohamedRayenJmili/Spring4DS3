@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Restaurant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idRestaurant;
+    private Long idRestaurant;
     private String nom;
     private long nbPlaceMax;
     @ManyToOne

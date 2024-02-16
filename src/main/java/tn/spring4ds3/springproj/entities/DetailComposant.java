@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class DetailComposant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idDetailComposant;
+    private Long idDetailComposant;
     private float imc;
     @Enumerated(EnumType.STRING)
     private TypeComposant typeComposant;

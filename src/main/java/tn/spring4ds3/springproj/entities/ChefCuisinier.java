@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class ChefCuisinier {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idChefCuisinier;
+    private Long idChefCuisinier;
     private String nom;
     private String prenom;
     @Enumerated(EnumType.STRING)
