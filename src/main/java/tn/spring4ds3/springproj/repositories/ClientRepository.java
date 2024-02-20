@@ -7,5 +7,4 @@ import java.util.Date;
 import java.util.List;
 
 public interface ClientRepository extends JpaRepository<Client,Long> {
-    List<Client> findByCommandes(Long idClient);
 }

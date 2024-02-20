@@ -8,6 +8,5 @@ import tn.spring4ds3.springproj.entities.TypeMenu;
 import java.util.List;
 
 public interface MenuRepository extends JpaRepository<Menu,Long> {
-    List<Menu> findByMenuTypeMenuAndPrixGreaterThan(TypeMenu type, double price);
-
+    List<Menu> findAllByTypeMenuAndPrixTotalGreaterThan (TypeMenu typeMenu,float somme);
 }
