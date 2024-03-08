@@ -1,5 +1,6 @@
 package tn.esprit.tic.ds.springproj.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,6 +22,7 @@ public class Restaurant {
     private Long idRestaurant;
     private String nom;
     private Long nbPlacesMax;
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER)
     ChaineRestauration chaineRestauration;
     @OneToMany(fetch = FetchType.LAZY)

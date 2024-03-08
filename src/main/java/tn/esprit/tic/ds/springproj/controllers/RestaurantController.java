@@ -1,10 +1,8 @@
 package tn.esprit.tic.ds.springproj.controllers;
 
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import tn.esprit.tic.ds.springproj.entities.Restaurant;
 import tn.esprit.tic.ds.springproj.repository.RestaurantRepository;
 import tn.esprit.tic.ds.springproj.services.IRestaurantService;
 
@@ -25,5 +23,21 @@ public class RestaurantController {
         List<RestaurantRepository> restaurants = restaurantService
                 .retrieveAllByChaineRestaurationDateCreationAndNbPlacesMax(localDate, nbPlacesMax);
         return restaurants;
+    }
+    //    http://localhost:8089/restaurant/restaurant/findRestaurantWithChaineRestaurant
+    @GetMapping("/findRestaurantWithChaineRestaurant/{nomRestaurant}/{libelleChaine}")
+    public Restaurant findRestaurantWithChaineRestaurant
+        (
+            @PathVariable("nomRestaurant") String nomRestaurant,
+            @PathVariable("libelleChaine") String libelleChaine) {
+        return restaurantService.affecterRestaurantAChaineRestauration(nomRestaurant, libelleChaine);
+    }
+    //    http://localhost:8089/menu/restaurant/AddRestaurantWithItsMenus
+    @PostMapping("/AddRestaurantWithItsMenus")
+    public Restaurant AddRestaurantWithItsMenus
+    (
+            @RequestBody Restaurant restaurant
+    ) {
+        return restaurantService.ajoutRestaurantEtMenuAssocie(restaurant);
     }
 }
