@@ -23,10 +23,10 @@ public class Menu {
     Float prixTotal;
     @Enumerated(EnumType.STRING)
     TypeMenu typeMenu;
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.EAGER)
     List<ChefCuisinier> chefCuisinier;
-    @OneToMany(mappedBy = "menu", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "menu", fetch = FetchType.EAGER)
     List<Commande> commandes;
-    @OneToMany(mappedBy = "menu", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "menu", fetch = FetchType.EAGER)
     List<Composant> composants;
 }

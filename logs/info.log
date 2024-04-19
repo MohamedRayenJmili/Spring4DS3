@@ -1,29 +1,75 @@
-2024-04-19 09:19:55.106 [restartedMain] INFO  t.e.t.d.s.SpringProjApplication - Starting SpringProjApplication using Java 21.0.2 with PID 18824 (C:\Users\moham\OneDrive\Desktop\sem8\spring\SpringProj\ASI-II\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\sem8\spring\SpringProj\ASI-II)
-2024-04-19 09:19:55.144 [restartedMain] INFO  t.e.t.d.s.SpringProjApplication - No active profile set, falling back to 1 default profile: "default"
-2024-04-19 09:19:55.221 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-04-19 09:19:55.222 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-04-19 09:19:57.078 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-19 09:19:57.310 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 193 ms. Found 8 JPA repository interfaces.
-2024-04-19 09:19:58.362 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8089 (http)
-2024-04-19 09:19:58.417 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-04-19 09:19:58.419 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
-2024-04-19 09:19:58.574 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/menu] - Initializing Spring embedded WebApplicationContext
-2024-04-19 09:19:58.576 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3352 ms
-2024-04-19 09:19:58.745 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-19 09:19:58.804 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-04-19 09:19:58.855 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-04-19 09:19:59.090 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-19 09:19:59.118 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-04-19 09:19:59.713 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40644539
-2024-04-19 09:19:59.716 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-04-19 09:19:59.793 [restartedMain] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.7.24 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2024-04-19 09:20:01.912 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-19 09:20:02.167 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-19 09:20:02.980 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-04-19 09:20:04.316 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-19 09:20:05.208 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-04-19 09:20:05.281 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8089 (http) with context path '/menu'
-2024-04-19 09:20:05.297 [restartedMain] INFO  t.e.t.d.s.SpringProjApplication - Started SpringProjApplication in 10.889 seconds (process running for 11.869)
-2024-04-19 09:20:56.151 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-19 09:20:56.157 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-04-19 09:20:56.170 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-19 12:00:20.392 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 12:00:25.386 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 12:00:30.389 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 12:00:35.393 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 12:00:40.383 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 12:00:45.386 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 12:00:48.508 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-19 12:00:48.512 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-19 12:00:48.519 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-19 12:02:48.628 [restartedMain] INFO  t.e.t.d.s.SpringProjApplication - Starting SpringProjApplication using Java 21.0.2 with PID 18032 (C:\Users\moham\OneDrive\Desktop\sem8\spring\Spring4DS3\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\sem8\spring\Spring4DS3)
+2024-04-19 12:02:48.630 [restartedMain] INFO  t.e.t.d.s.SpringProjApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-19 12:02:48.667 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-19 12:02:48.668 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-19 12:02:49.380 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-19 12:02:49.446 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 8 JPA repository interfaces.
+2024-04-19 12:02:50.076 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8089 (http)
+2024-04-19 12:02:50.086 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-19 12:02:50.087 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-19 12:02:50.122 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/menu] - Initializing Spring embedded WebApplicationContext
+2024-04-19 12:02:50.123 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1455 ms
+2024-04-19 12:02:50.324 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-19 12:02:50.370 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-19 12:02:50.393 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-04-19 12:02:50.596 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-19 12:02:50.617 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-19 12:02:50.768 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ec16107
+2024-04-19 12:02:50.769 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-19 12:02:50.828 [restartedMain] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.7.24 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-04-19 12:02:51.892 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-19 12:02:51.978 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-19 12:02:52.400 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-19 12:02:52.965 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-19 12:02:53.377 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-04-19 12:02:53.414 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8089 (http) with context path '/menu'
+2024-04-19 12:02:53.424 [restartedMain] INFO  t.e.t.d.s.SpringProjApplication - Started SpringProjApplication in 5.133 seconds (process running for 5.714)
+2024-04-19 12:02:53.598 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - Le menu le plus commandé est 'menu1' et il a été commandé 1 fois.
+2024-04-19 12:02:58.467 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - Le menu le plus commandé est 'menu1' et il a été commandé 1 fois.
+2024-04-19 12:03:03.442 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - Le menu le plus commandé est 'menu1' et il a été commandé 1 fois.
+2024-04-19 12:03:08.446 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - Le menu le plus commandé est 'menu1' et il a été commandé 1 fois.
+2024-04-19 12:03:13.471 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - Le menu le plus commandé est 'menu1' et il a été commandé 1 fois.
+2024-04-19 12:03:18.458 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - Le menu le plus commandé est 'menu1' et il a été commandé 1 fois.
+2024-04-19 12:03:22.539 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-19 12:03:22.542 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-19 12:03:22.548 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-19 12:05:31.513 [restartedMain] INFO  t.e.t.d.s.SpringProjApplication - Starting SpringProjApplication using Java 21.0.2 with PID 23104 (C:\Users\moham\OneDrive\Desktop\sem8\spring\Spring4DS3\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\sem8\spring\Spring4DS3)
+2024-04-19 12:05:31.514 [restartedMain] INFO  t.e.t.d.s.SpringProjApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-19 12:05:31.554 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-19 12:05:31.554 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-19 12:05:32.360 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-19 12:05:32.434 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 8 JPA repository interfaces.
+2024-04-19 12:05:32.998 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8089 (http)
+2024-04-19 12:05:33.020 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-19 12:05:33.021 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-19 12:05:33.082 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/menu] - Initializing Spring embedded WebApplicationContext
+2024-04-19 12:05:33.083 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1527 ms
+2024-04-19 12:05:33.284 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-19 12:05:33.329 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-19 12:05:33.358 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-04-19 12:05:33.568 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-19 12:05:33.593 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-19 12:05:33.731 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2240942a
+2024-04-19 12:05:33.732 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-19 12:05:33.776 [restartedMain] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.7.24 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-04-19 12:05:34.769 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-19 12:05:34.866 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-19 12:05:35.361 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-19 12:05:35.854 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-19 12:05:36.380 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-04-19 12:05:36.413 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8089 (http) with context path '/menu'
+2024-04-19 12:05:36.425 [restartedMain] INFO  t.e.t.d.s.SpringProjApplication - Started SpringProjApplication in 5.226 seconds (process running for 5.816)
+2024-04-19 12:05:36.526 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - Le menu le plus commandé est 'menu1' et il a été commandé 1 fois.
+2024-04-19 12:05:41.468 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - Le menu le plus commandé est 'menu1' et il a été commandé 1 fois.
+2024-04-19 12:05:46.081 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-19 12:05:46.083 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-19 12:05:46.089 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

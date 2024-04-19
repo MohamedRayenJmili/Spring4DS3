@@ -1,0 +1,87 @@
+2024-04-19 11:55:10.312 [restartedMain] INFO  t.e.t.d.s.SpringProjApplication - Starting SpringProjApplication using Java 21.0.2 with PID 7668 (C:\Users\moham\OneDrive\Desktop\sem8\spring\Spring4DS3\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\sem8\spring\Spring4DS3)
+2024-04-19 11:55:10.318 [restartedMain] INFO  t.e.t.d.s.SpringProjApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-19 11:55:10.364 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-19 11:55:10.364 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-19 11:55:11.060 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-19 11:55:11.152 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 8 JPA repository interfaces.
+2024-04-19 11:55:11.786 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8089 (http)
+2024-04-19 11:55:11.796 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-19 11:55:11.797 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-19 11:55:11.857 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/menu] - Initializing Spring embedded WebApplicationContext
+2024-04-19 11:55:11.858 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1490 ms
+2024-04-19 11:55:12.002 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-19 11:55:12.048 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-19 11:55:12.075 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-04-19 11:55:12.283 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-19 11:55:12.305 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-19 11:55:12.505 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c7795ed
+2024-04-19 11:55:12.508 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-19 11:55:12.555 [restartedMain] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.7.24 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-04-19 11:55:13.599 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-19 11:55:13.778 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-19 11:55:14.198 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-19 11:55:14.739 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-19 11:55:15.305 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-04-19 11:55:15.342 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8089 (http) with context path '/menu'
+2024-04-19 11:55:15.354 [restartedMain] INFO  t.e.t.d.s.SpringProjApplication - Started SpringProjApplication in 5.354 seconds (process running for 5.891)
+2024-04-19 11:55:15.485 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:55:20.389 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:55:25.388 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:55:30.379 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:55:35.389 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:55:40.393 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:55:45.397 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:55:50.385 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:55:55.396 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:56:00.401 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:56:05.388 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:56:10.398 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:56:15.403 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:56:20.371 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:56:25.394 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:56:30.414 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:56:35.406 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:56:40.394 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:56:45.387 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:56:50.397 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:56:55.400 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:57:00.390 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:57:05.399 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:57:10.386 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:57:15.384 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:57:20.361 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:57:25.389 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:57:30.385 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:57:35.387 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:57:40.389 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:57:45.404 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:57:50.410 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:57:55.392 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:58:00.386 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:58:05.371 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:58:10.400 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:58:15.387 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:58:20.402 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:58:25.392 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:58:30.365 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:58:35.359 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:58:40.380 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:58:45.380 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:58:50.382 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:58:55.387 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:59:00.386 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:59:05.364 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:59:10.383 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:59:15.387 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:59:20.400 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:59:25.390 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:59:30.407 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:59:35.398 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:59:40.395 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:59:45.399 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:59:50.403 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 11:59:55.390 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 12:00:00.396 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 12:00:05.391 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 12:00:10.386 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande
+2024-04-19 12:00:15.380 [scheduling-1] INFO  t.e.t.d.s.services.CommandeService - la menu la plus commande

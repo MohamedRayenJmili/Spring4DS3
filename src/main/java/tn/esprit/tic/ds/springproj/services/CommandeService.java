@@ -1,6 +1,9 @@
 package tn.esprit.tic.ds.springproj.services;
 
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.scheduling.annotation.Schedules;
 import org.springframework.stereotype.Service;
 import tn.esprit.tic.ds.springproj.entities.Client;
 import tn.esprit.tic.ds.springproj.entities.Commande;
@@ -10,9 +13,12 @@ import tn.esprit.tic.ds.springproj.repository.CommandeRepository;
 import tn.esprit.tic.ds.springproj.repository.MenuRepository;
 
 import java.time.LocalDate;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
+@Slf4j
 @AllArgsConstructor
 public class CommandeService implements ICommandeService {
     private final CommandeRepository commandeRepository;
@@ -90,5 +96,25 @@ public class CommandeService implements ICommandeService {
         commande.setTotalCommande(totalCommande);
 
         commandeRepository.save(commande);
+    }
+
+    @Override
+    public void findCurrentYearCommandesOrderByNote() {
+
+    }
+
+//    @Override
+//    @Scheduled(fixedRate = 5000)
+//    public void findCurrentYearCommandesOrderByNote() {
+//        int currentYear = LocalDate.now().getYear();
+//
+//        log.info("ceci tous les commandes",commandeRepository.findAll().stream().map(Commande::getDateCommande).filter(date -> date.getYear() == currentYear).sorted());
+//    }
+
+    @Override
+    @Scheduled(fixedRate = 5000)
+    public void menuPlusCommande() {
+        var menu=menuRepository.findAll().stream().sorted(Comparator.comparing(c->c.getCommandes().size())).findFirst();
+        log.info("Le menu le plus commandé est '{}' et il a été commandé {} fois.", menu.get().getLibelleMenu(), menu.get().getCommandes().size());
     }
 }
