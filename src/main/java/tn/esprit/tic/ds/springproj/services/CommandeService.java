@@ -3,7 +3,6 @@ package tn.esprit.tic.ds.springproj.services;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.scheduling.annotation.Schedules;
 import org.springframework.stereotype.Service;
 import tn.esprit.tic.ds.springproj.entities.Client;
 import tn.esprit.tic.ds.springproj.entities.Commande;
@@ -13,8 +12,12 @@ import tn.esprit.tic.ds.springproj.repository.CommandeRepository;
 import tn.esprit.tic.ds.springproj.repository.MenuRepository;
 
 import java.time.LocalDate;
+import java.time.Year;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @Service
@@ -99,22 +102,49 @@ public class CommandeService implements ICommandeService {
     }
 
     @Override
+    @Scheduled(fixedDelay = 10000)
     public void findCurrentYearCommandesOrderByNote() {
+        int currentYear = LocalDate.now().getYear();
 
+        commandeRepository.findAll().stream()
+                .filter(commande -> commande.getDateCommande().getYear() == currentYear)
+                .sorted(Comparator.comparing(Commande::getNote).reversed())
+                .forEach((commande) ->
+                        log.info("La commande faite le {} d'un montant global de {} a une note de {}",
+                                commande.getDateCommande(),
+                                commande.getTotalCommande(),
+                                commande.getNote())
+                );
     }
 
+//    // getYear() deprecated?
 //    @Override
-//    @Scheduled(fixedRate = 5000)
+//    @Scheduled(fixedDelay = 10000)
 //    public void findCurrentYearCommandesOrderByNote() {
-//        int currentYear = LocalDate.now().getYear();
+//        int currentYear = Year.now().getValue();
 //
-//        log.info("ceci tous les commandes",commandeRepository.findAll().stream().map(Commande::getDateCommande).filter(date -> date.getYear() == currentYear).sorted());
+//        commandeRepository.findAll().stream()
+//                .filter(commande -> Year.from(commande.getDateCommande()).equals(Year.of(currentYear)))
+//                .sorted(Comparator.comparing(Commande::getNote).reversed())
+//                .forEach((commande) ->
+//                        log.info("La commande faite le {} d'un montant global de {} a une note de {}",
+//                                commande.getDateCommande(),
+//                                commande.getTotalCommande(),
+//                                commande.getNote())
+//                );
 //    }
 
-    @Override
-    @Scheduled(fixedRate = 5000)
-    public void menuPlusCommande() {
-        var menu=menuRepository.findAll().stream().sorted(Comparator.comparing(c->c.getCommandes().size())).findFirst();
-        log.info("Le menu le plus commandé est '{}' et il a été commandé {} fois.", menu.get().getLibelleMenu(), menu.get().getCommandes().size());
-    }
+//    @Override
+//    @Scheduled(fixedDelay = 10000)
+//    public void findCurrentYearCommandesOrderByNote() {
+//        // Retrieve the menu with the maximum number of commandes directly from the repository
+//        Menu maxMenu = menuRepository.findMenuWithMaxCommandes();
+//
+//        if (maxMenu != null) {
+//            log.info("Le menu le plus commandé dans votre restaurant est {} commandé {} fois",
+//                    maxMenu.getIdMenu(),
+//                    maxMenu.getCommandes().size());
+//        }
+//    }
+
 }
